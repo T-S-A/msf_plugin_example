@@ -34,11 +34,11 @@ module Msf
 			end
 
 			def cmd_mssql_attack
-        self.shell.run_single("use auxiliary/scanner/mssql/mssql_login")
-        self.shell.run_single("set PASS_FILE /wordlists/mssql_pwds.txt")
-        self.shell.run_single("set BLANK_PASSWORDS true")
-      end
-      #end of functions
+        			self.shell.run_single("use auxiliary/scanner/mssql/mssql_login")
+        			self.shell.run_single("set PASS_FILE /wordlists/mssql_pwds.txt")
+        			self.shell.run_single("set BLANK_PASSWORDS true")
+				#put any other code here for this function
+      			end
 		end
 	end
 end
